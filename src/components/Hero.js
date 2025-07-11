@@ -1,8 +1,6 @@
 import React from 'react';
 import blobBg from '../assets/blob-purple.svg';
 
-import RajeshhImg from '../assets/rajeshh.png';
-import RajeshhBg from '../assets/rajeshh-bg.png';
 import look1 from '../assets/look1.png';
 import look2 from '../assets/look2.png';
 
@@ -17,14 +15,12 @@ function Hero() {
   <img src={look1} alt="Look1" style={styles.look1} />
   <img src={look2} alt="Look2" style={styles.look2} />
 
-  {/* Faded Background Rajeshh */}
-  <img src={RajeshhBg} alt="Rajeshh" style={styles.rajeshhBg} />
-
+  
   {/* Text Content */}
   <div style={styles.textContent}>
     <p style={styles.smallText}>Smart Products</p>
     <h1 style={styles.mainText}>
-      Summer Offer<br />2020 Collection
+      Summer Offer<br />2025 Collection
     </h1>
     <button style={styles.button}>SHOP NOW</button>
   </div>
@@ -58,19 +54,7 @@ const styles = {
     opacity: 0.25,
   },
  
-  Rajeshh: {
-    display: 'none', // optional image, hide if not needed
-  },
- rajeshhBg: {
-  position: 'absolute',
-  top: '0px',             // Adjust as needed
-  left: '400px',           // Adjust horizontal placement
-  height: '540px', 
-  width:'400px',       // Size of the background image
-  opacity: 0.8,
-  zIndex: 1,              // Between blob (zIndex 0) and text (zIndex 2)
-  pointerEvents: 'none',
-},
+  
 
 textContent: {
   maxWidth: '500px',
