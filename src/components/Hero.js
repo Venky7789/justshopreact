@@ -1,22 +1,14 @@
 import React from 'react';
 import blobBg from '../assets/blob-purple.svg';
-
 import look1 from '../assets/look1.png';
 import look2 from '../assets/look2.png';
-
 
 function Hero() {
   return (
     <section style={styles.hero}>
-  {/* Background Blob */}
   <img src={blobBg} alt="blob" style={styles.blob} />
-
-  {/* Extra Style Images on Blob */}
   <img src={look1} alt="Look1" style={styles.look1} />
   <img src={look2} alt="Look2" style={styles.look2} />
-
-  
-  {/* Text Content */}
   <div style={styles.textContent}>
     <p style={styles.smallText}>Smart Products</p>
     <h1 style={styles.mainText}>
@@ -24,15 +16,9 @@ function Hero() {
     </h1>
     <button style={styles.button}>SHOP NOW</button>
   </div>
-
-  {/* Optional: Venky */}
- 
 </section>
-
-
   );
 }
-
 const styles = {
   hero: {
     position: 'relative',
@@ -48,20 +34,16 @@ const styles = {
   blob: {
     position: 'absolute',
     top: '-120px',
-    right: '-100px', // moved to right side
+    right: '-100px', 
     zIndex: 0,
     width: '900px',
     opacity: 0.25,
   },
- 
-  
-
 textContent: {
   maxWidth: '500px',
-  zIndex: 2,              // Make sure text is above the faded image
+  zIndex: 2,              
   position: 'relative',
 },
-
   smallText: {
     fontSize: '16px',
     color: '#555',
@@ -84,15 +66,14 @@ textContent: {
   },
  look1: {
   position: 'absolute',
-  top: '200px',            // Adjust to shift higher
-  right: '260px',          // Adjust to fit within blob
-  width: '300px',          // ✅ Larger size
+  top: '200px',           
+  right: '260px',         
+  width: '300px',         
   height: '300px',
   zIndex: 1,
   opacity: 0.9,
-  objectFit: 'cover',      // Keeps image neat (optional)
+  objectFit: 'cover',     
 },
-
 look2: {
   position: 'absolute',
   bottom: '300px',
@@ -102,8 +83,5 @@ look2: {
   zIndex: 1,
   opacity: 0.9,
 },
-
-
 };
-
 export default Hero;

@@ -1,5 +1,4 @@
 import React from 'react';
-
 function Features() {
   const features = [
     {

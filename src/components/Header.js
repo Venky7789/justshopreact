@@ -4,7 +4,6 @@ function Header() {
   return (
     <header style={styles.header}>
       <div style={styles.logo}>Rajesh Styles And Fashions.</div>
-
       <nav style={styles.nav}>
         <a href="/">Home</a>
         <a href="/">Shop</a>
@@ -18,7 +17,6 @@ function Header() {
     </header>
   );
 }
-
 const styles = {
   header: {
     display: 'flex',
@@ -33,7 +31,7 @@ const styles = {
   },
   nav: {
     display: 'flex',
-    gap: '20px', // 👈 This spaces links evenly
+    gap: '20px', 
     fontSize: '16px',
     fontWeight: '500',
   },
